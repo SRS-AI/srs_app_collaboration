@@ -75,11 +75,10 @@ int main(int argc, char **argv)
 	
 	if( sched_setaffinity(0, sizeof(mask), &mask) < 0)
 	{
-		//SRS_LOGE("cannot fix cpu core: 0X%02X", mask);
 		return -1;
 	}
 
-	ip_addr = "192.168.0.124";
+	ip_addr = "127.0.0.1";
 	
 	while (!m_socket.connectSocket(ip_addr.c_str(), RADAR_DATA_RX_PORT)) {
 		numTry++;

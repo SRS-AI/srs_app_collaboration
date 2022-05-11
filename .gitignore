@@ -1,0 +1,7 @@
+/.vs
+/bin
+/obj
+/sampleModel/.ipynb_checkpoints
+/sampleModel/*.tflite
+/sampleModel/my_model
+/sampleModel/model_data
